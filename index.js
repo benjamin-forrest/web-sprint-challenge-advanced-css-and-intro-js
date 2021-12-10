@@ -292,9 +292,21 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array){
+  let newObject=[
+    {
+      "id": 20,
+      "name": 'Your Name Here', 
+      "years": 'Your Birth Year - current day',
+      "genre": 'Web Design', 
+      "nationality": 'Your Nationality Here',
+      "bio": 'Add 1-2 sentences (or use lorem ipsum)',
+    }
+  ];
+  array.push(newObject);
+  return array;
 }
+console.log(addArtist(artists));
 
 
 
